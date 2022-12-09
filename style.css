@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    background-image: url(./images/pawel-czerwinski-Nmeu6odqoNM-unsplash.jpeg) !important;
+    background-size: cover;
+    
+    font-family: 'Bebas Neue', cursive !important;
+}
+
+
+a{
+    text-decoration: none !important;
+}
+
+.container-1{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.059);
+    border-radius: 10px;
+    margin-top: 10px;
+    
+}
+
+button{
+    color: rgb(3, 4, 4) !important;
+}
+
+.container-2{
+
+    margin-top: 100px;
+}
+
+h1{
+    font-family: 'Syncopate', sans-serif;
+    color: rgb(8, 8, 8);
+    font-size: 170px !important;
+    margin: 50px;
+    animation-name: showUp ;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    margin-top: 200px !important;
+   
+}
+
+.greeting{
+    color: rgb(86, 8, 8); 
+    opacity: 0;  
+    animation-name: showUp1;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showUp {
+
+    0%{
+        transform: translate(0%);
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+       opacity: 1; 
+    }
+
+}
+
+@keyframes showUp1 {
+        0%{
+            transform: translate(0%);
+            transform: scale(100,50);
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+    
+        100%{
+           opacity: 1; 
+        }
+}
+
+.logo_html{
+    width: 5%;
+}
+.logo_css{
+    width: 6%;
+}
+.logo{
+    width: 6%;
+}
+
+.section_about{
+    margin-top: 40%;
+}
+
+.title{
+    color: rgb(129, 11, 11);
+    font-size: 600%;
+}
+
+.logo{
+    animation: shake 2s infinite;
+}
+
+@keyframes shake {
+    0%{
+        transform: rotate(10deg);
+    }
+
+    50%{
+        transform: rotate(-10deg);
+    }
+
+    100%{
+        transform: rotate(10deg)
+    }
+}
+
+.logo1{
+    margin-left: 90%;
+}
+
+.section_repository{
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+
+.section_links{
+    margin-bottom: 25%;
+}
+
+.card{
+    margin: 10px;
+}
