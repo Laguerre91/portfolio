@@ -14,10 +14,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
 
     <title>Lara Aguerre</title>
 </head>
-<body>
+<body class="container-fluid">
 
 <header>
     <nav>
@@ -33,14 +36,16 @@
                     <a href="#links"><button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Links</button></a>
                 </li>
                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Certificates</button>
+                    <a href="#certificates"><button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Certificates</button></a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact me</button>
+                    <a href="#contact-me"><button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact me</button></a>
                 </li>    
             </ul>
         </div>
     </nav>
+
+<main>
 
     <div class="container container-2">
         <h1><span class="greeting">Hi!</span> I'm Lara</h1>
@@ -49,7 +54,7 @@
 
 <section class="container section_about" id="about">
 
-    <div class=" d-flex justify-content-between">
+    <div class="d-flex justify-content-between">
         <img src="./images/logoJS.png" class="img-fluid logo_js logo" alt="Logo de JavaScript">
         <img src="./images/logoREACT.png" class="img-fluid logo_react logo" alt="Logo de React">
         <img src="./images/LogoHTML.png" class="img-fluid logo_html logo" alt="Logo de HTML5">
@@ -58,7 +63,7 @@
         <img src="./images/logoBOOTSTRAP.png" class="img-fluid logo_bootstrap logo" alt="Logo de Bootstrap">
     </div>    
 
-    <div class="container-3 d-flex justify-content-center flex-column mt-5">
+    <div class="container-3 flex-column mt-5 w-50 ">
         <h2 class="title text-xl-center">About</h2>
             <p class="text-xl-center fs-2">I'm a Frontend Developer who studied in the Technological University of Buenos aires. Nowdays I'm based in Madrid. I moved here searching for new challenges!. I specialize in HTML, CSS and JavaScript and also use technologies such as Bootstrap, React, Angular, Node, etc. In other words I'm veeeery adaptable. Let's have a coffee and discuss your idea and let me help you create a responsive, practical and fun website</p>
     </div>
@@ -70,9 +75,6 @@
         <h3 class="title">Repository</h3>
             <p class="text-xl-start fs-2">This is the <a href="https://github.com/Laguerre91?tab=repositories" target="_blank">link</a> to my GitHub repository ;) There you can find things that I'm doing</p> 
     </div>
-    <div class="align-self-start">
-        <img class="logo" src="./images/logoGITHUB.png" alt="Logo de GitHub">
-    </div>
 </section>
 
 
@@ -81,9 +83,6 @@
             <h4 class="title">LINKS</h4>
                 <p class="text-xl-end fs-2">This is the <a href="https://www.linkedin.com/in/lara-aguerre-6820b9194/" target="_blank">link</a> to my LinkedIn so you can check out my CV and all my experience ;)</p> 
     </div>
-    <div class="align-self-center">
-        <img class="logo logo1" src="./images/logoLINKEDIN.png" alt="Logo de LinkedIn">
-    </div>
 </section>
 
 <section class="container section_certificates" id="certificates"> 
@@ -91,20 +90,41 @@
         <h5 class="col title text-xl-center">Certificates</h5>
     </div>
 
-    <div class="row-2">
-        <div class="card col">
-            <img class="cert_1" src="./images/Certificados-1.jpg" alt="">
+    <div class="row">
+        <div class="card col-md-6">
+            <img class="cert_1" src="./images/Certificados-1.jpg" alt="Certificado de HTML">
         </div>
-        <div class="card col">
-            <img class="cert_1" src="./images/Certificado Javascript.jpeg" alt="">
+        <div class="card col-md-6">
+            <img class="cert_1" src="./images/Certificado Javascript.jpeg" alt="Certificado de Javascript">
         </div>
-        <div class="card col">
-            <img class="cert_1" src="./images/Certificados avanzado-1.jpg" alt="">
+        <div class="card col-md-6">
+            <img class="cert_1" src="./images/Certificados avanzado-1.jpg" alt="Certificado de HTML, CSS y Javascript avanzado">
         </div>
     </div>    
 </section>
 
-    
+<section class="container section_contact-me w-50 d-flex flex-column mb-5" id="contact-me">
+
+    <p class="text-xl-start fs-2 text-xl-center">Let's have a coffee!</p>
+    <p class="text-xl-start fs-2 text-xl-center">You can write me at aguerre.lara@gmail.com</p>
+    <p class="text-xl-start fs-2 text-xl-center">Or you can call me +34 664290845</p>
+</section>
+
+</main>
+
+<footer class="text-center text-white footer" style="background-color: #f1f1f1a1;">
+    <div class="container pt-4">
+      <section class="mb-4">
+        <a target="_blank" class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/in/lara-aguerre/" role="button" data-mdb-ripple-color="dark"
+          ><img class="logo_footer" src="./images/logoLINKEDIN.png" alt="Logo de LinkedIn"><i class="fab fa-linkedin"></i
+        ></a>
+        <a target="_blank" class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/Laguerre91/" role="button" data-mdb-ripple-color="dark"><img class="logo_footer1" src="./images/logoGITHUB.png" alt="Logo de GitHub"><i class="fab fa-github"></i></a>
+      </section>
+    </div> 
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.089);">
+      Lara Aguerre © 2023
+    </div>
+  </footer>
 
 
         <!--BOOTSTRAP-->
